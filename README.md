@@ -42,12 +42,6 @@ This repository demonstrates an application utilizing Redis distributed caching 
 - Install Redis following the provided instructions.
 - Start the Redis server.
 
-## Redis Setup (Windows)
-
-- Download Redis for Windows from the [official Redis website](https://redis.io/download).
-- Install Redis following the provided instructions.
-- Start the Redis server.
-
 ## Usage
 
 Feel free to utilize this repository as a reference for implementing Redis distributed caching in your own projects. Customize and expand upon it according to your project's requirements.
