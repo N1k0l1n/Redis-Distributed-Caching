@@ -5,8 +5,8 @@ function DashboardComponent() {
     const [dashboardData, setDashboardData] = useState(null);
 
     useEffect(() => {
-        // Fetch dashboard data from your ASP.NET Core backend API
-        fetch('/api/dashboard/dashboard')
+        // Fetch dashboard data
+        fetch('https://localhost:7148/api/Dashboard/dashboard')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
@@ -14,7 +14,6 @@ function DashboardComponent() {
                 return response.json();
             })
             .then(data => {
-                // Received dashboard data from the backend
                 setDashboardData(data);
             })
             .catch(error => {

@@ -1,5 +1,6 @@
 ﻿namespace Redis_Distributed_Caching.Server.Models
 {
+    [Serializable]
     public class DashboardData
     {
         public int TotalCustomerCount { get; set; }

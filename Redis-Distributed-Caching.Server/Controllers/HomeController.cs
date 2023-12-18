@@ -16,6 +16,7 @@ namespace RedisDemo.Controllers
             _distributedCache = distributedCache;
         }
 
+        //create or update a record
         [HttpPost("save")]
         public async Task<IActionResult> SaveRedisCache()
         {
@@ -31,10 +32,12 @@ namespace RedisDemo.Controllers
             var totalSeconds = tomorrow.Subtract(DateTime.Now).TotalSeconds;
 
             var distributedCacheEntryOptions = new DistributedCacheEntryOptions();
+            //This particular record expires in withtin this time
             distributedCacheEntryOptions.AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(totalSeconds);
+            //This particular record is not used for some time, For example : TimeSpan.FromHours(1);
             distributedCacheEntryOptions.SlidingExpiration = null;
 
-            // Serialize the object directly without using JSON.NET
+            // Serialize the object directly without using JSON.NET toi use it iN REDIS
             var dataBytes = JsonSerializer.SerializeToUtf8Bytes(dashboadData);
 
             await _distributedCache.SetAsync("DashboardData", dataBytes, distributedCacheEntryOptions);
@@ -42,6 +45,8 @@ namespace RedisDemo.Controllers
             return Ok();
         }
 
+
+        //Get DashboardData
         [HttpGet("dashboard")]
         public async Task<IActionResult> GetDashboardData()
         {
