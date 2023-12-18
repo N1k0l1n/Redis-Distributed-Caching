@@ -57,3 +57,5 @@ Feel free to utilize this repository as a reference for implementing Redis distr
 Contributions are welcome! If you'd like to improve this project or add new features, feel free to open issues and pull requests. Follow the guidelines outlined in the [CONTRIBUTING.md](CONTRIBUTING.md) file.
 
 ## License
+
+This project is licensed under the [MIT License](LICENSE). You are free to modify, distribute, and use the code in your own projects as per the terms of this license.
