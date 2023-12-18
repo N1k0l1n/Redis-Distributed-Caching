@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Redis-Distributed-Caching.Server", "Redis-Distributed-Caching.Server\Redis-Distributed-Caching.Server.csproj", "{30334EC0-3A87-4154-8891-FD3A09F29148}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "redis-distributed-caching.client", "redis-distributed-caching.client\redis-distributed-caching.client.esproj", "{1953F707-1D49-4E61-A229-6BB34C8410AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30334EC0-3A87-4154-8891-FD3A09F29148}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30334EC0-3A87-4154-8891-FD3A09F29148}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30334EC0-3A87-4154-8891-FD3A09F29148}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30334EC0-3A87-4154-8891-FD3A09F29148}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1953F707-1D49-4E61-A229-6BB34C8410AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1953F707-1D49-4E61-A229-6BB34C8410AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1953F707-1D49-4E61-A229-6BB34C8410AB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1953F707-1D49-4E61-A229-6BB34C8410AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1953F707-1D49-4E61-A229-6BB34C8410AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1953F707-1D49-4E61-A229-6BB34C8410AB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6E9F2E35-31C0-462E-B759-9B968EC1FEDC}
+	EndGlobalSection
+EndGlobal
